@@ -1,0 +1,3 @@
+[submodule "vendor/EdpMarkdown"]
+	path = vendor/EdpMarkdown
+	url = git://github.com/EvanDotPro/EdpMarkdown.git
