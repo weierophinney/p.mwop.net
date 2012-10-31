@@ -1,0 +1,36 @@
+<section class="phly-paste row">
+<div class="span8">
+<h1>Pastes</h1>
+<?php if (0 == count($this->pastes)): ?>
+<p>No pastes found!</p>
+</div>
+
+<?php echo $this->render('phly-paste/paste/sidebar'); ?>
+
+</section>
+<?php
+    return;
+endif;
+$this->pastes->setCurrentPageNumber($this->page);
+$this->pastes->setItemCountPerPage(10);
+foreach ($this->pastes as $paste):
+    echo $this->render('phly-paste/paste/summary', array('paste' => $paste));
+endforeach;
+?>
+
+<div class="clearfix"></div>
+
+<?php
+$paginationInfo = $this->placeholder('phly-paste-pagination');
+if (!isset($paginationInfo->route)) {
+    $paginationInfo->route  = 'phly-paste/list';
+    $paginationInfo->params = array();
+}
+echo $this->paginationControl($this->pastes, 'Sliding', 'phly-paste/paste/pagination-control');
+?>
+
+</div>
+
+<?php echo $this->render('phly-paste/paste/sidebar'); ?>
+
+</section>

@@ -19,6 +19,7 @@ return array(
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',
             'phly-paste/paste/help'   => __DIR__ . '/../view/paste/help.phtml',
+            'phly-paste/paste/list'   => __DIR__ . '/../view/paste/list.phtml',
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',
