@@ -3,3 +3,7 @@
 # available.  Otherwise it will execute while your application is stopped
 # before the deploy step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
+echo "Installing composer dependencies..."
+/usr/bin/env php composer.phar install
+echo "Synchronizing submodules..."
+/usr/bin/env git submodule update --init --recursive
