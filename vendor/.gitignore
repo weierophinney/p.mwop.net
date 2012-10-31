@@ -1,0 +1,10 @@
+!.gitignore
+.composer
+bin
+composer
+doctrine
+easybook
+nick4fake
+phly
+zendframework
+autoload.php

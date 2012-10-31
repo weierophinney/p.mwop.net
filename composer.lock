@@ -1,0 +1,459 @@
+{
+    "hash": "bd3e2bf5f35685488462ec787f256d76",
+    "packages": [
+        {
+            "name": "doctrine/common",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/common",
+                "reference": "20cb487a5809a42f03020c89fa09eb4458de827f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/doctrine/common/zipball/20cb487a5809a42f03020c89fa09eb4458de827f",
+                "reference": "20cb487a5809a42f03020c89fa09eb4458de827f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "time": "1350491397",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\": "lib/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com",
+                    "homepage": "http://www.instaclick.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "http://jmsyst.com",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "Common Library for Doctrine projects",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "collections",
+                "spl",
+                "eventmanager",
+                "annotations",
+                "persistence"
+            ]
+        },
+        {
+            "name": "easybook/geshi",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/javiereguiluz/geshi",
+                "reference": "6f5f9c621936faf90d92f355967604fe07f7a60f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/javiereguiluz/geshi/zipball/6f5f9c621936faf90d92f355967604fe07f7a60f",
+                "reference": "6f5f9c621936faf90d92f355967604fe07f7a60f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">4.3.0"
+            },
+            "time": "1348828425",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "classmap": [
+                    "./"
+                ]
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Benny Baumann",
+                    "email": "BenBE@geshi.org"
+                },
+                {
+                    "name": "Nigel McNie",
+                    "email": "nigel@geshi.org"
+                }
+            ],
+            "description": "GeSHi - Generic Syntax Highlighter. This is an unmodified port of GeSHi project code found on SourceForge.",
+            "homepage": "http://qbnz.com/highlighter",
+            "keywords": [
+                "syntax",
+                "highlight",
+                "highlighter"
+            ]
+        },
+        {
+            "name": "nick4fake/htmlpurifier",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nick4fake/htmlpurifier.git",
+                "reference": "a33ac67e68c7aa241a3d2aa27174ba88df48b1e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/nick4fake/htmlpurifier/zipball/a33ac67e68c7aa241a3d2aa27174ba88df48b1e8",
+                "reference": "a33ac67e68c7aa241a3d2aa27174ba88df48b1e8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "time": "1348047456",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "HTMLPurifier": "",
+                    "HTMLPurifier_": "HTMLPurifier/"
+                }
+            },
+            "license": [
+                "LGPL-2.0"
+            ],
+            "description": "HTML Purifier is a standards-compliant HTML filter library written in PHP.",
+            "homepage": "http://htmlpurifier.org/"
+        },
+        {
+            "name": "phly/phly-mongo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weierophinney/PhlyMongo",
+                "reference": "f87f21493441c1fa29a475539a260591e1cfc430"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/weierophinney/PhlyMongo/zipball/f87f21493441c1fa29a475539a260591e1cfc430",
+                "reference": "f87f21493441c1fa29a475539a260591e1cfc430",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "ext-mongo": "*",
+                "zendframework/zend-paginator": "2.*",
+                "zendframework/zend-servicemanager": "2.*",
+                "zendframework/zend-stdlib": "2.*"
+            },
+            "require-dev": {
+                "zendframework/zend-loader": "2.*",
+                "zendframework/zend-modulemanager": "2.*",
+                "zendframework/zend-mvc": "2.*"
+            },
+            "time": "1350338185",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "PhlyMongo": "src/",
+                    "PhlyMongoTest": "test/"
+                },
+                "classmap": [
+                    "./"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Matthew Weier O'Phinney",
+                    "email": "matthew@weierophinney.net",
+                    "homepage": "http://mwop.net/"
+                }
+            ],
+            "description": "ZF2 Module providing services and paginators surrounding MongoDB",
+            "homepage": "https://github.com/weierophinney/PhlyMongo",
+            "keywords": [
+                "mongodb",
+                "zend",
+                "zf2",
+                "module",
+                "mongo"
+            ]
+        },
+        {
+            "name": "phly/phly-paste",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weierophinney/PhlyPaste",
+                "reference": "2ef6be6a34d51b3c2290f086b2da2cf5922d8b32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/weierophinney/PhlyPaste/zipball/2ef6be6a34d51b3c2290f086b2da2cf5922d8b32",
+                "reference": "2ef6be6a34d51b3c2290f086b2da2cf5922d8b32",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zend-authentication": "2.*",
+                "zendframework/zend-captcha": "2.*",
+                "zendframework/zend-form": "2.*",
+                "zendframework/zend-mvc": "2.*",
+                "zendframework/zend-view": "2.*",
+                "zendframework/zend-stdlib": "2.*",
+                "doctrine/common": ">=2.1",
+                "easybook/geshi": "dev-master",
+                "nick4fake/htmlpurifier": "dev-master"
+            },
+            "suggest": {
+                "EdpMarkdown": "Install Markdown to allow markdown pastes: git clone --recursive git://github.com/EvanDotPro/EdpMarkdown.git vendor/EdpMarkdown",
+                "phly/phly-mongo": "Install phly/phly-mongo if you wish to use the Mongo adapters",
+                "zendframework/zend-db": "Install Zend\\Db if you plan to use the TableGatewayPasteService",
+                "zendframework/zendservice-recaptcha": "Install ReCaptcha service if you plan to use ReCaptcha"
+            },
+            "time": "1350499459",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "PhlyPaste": "src/"
+                },
+                "classmap": [
+                    "./"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Matthew Weier O'Phinney",
+                    "email": "matthew@weierophinney.net",
+                    "homepage": "http://mwop.net/"
+                }
+            ],
+            "description": "ZF2 Module implementing a pastebin",
+            "homepage": "https://github.com/weierophinney/PhlyPaste",
+            "keywords": [
+                "zend",
+                "zf2",
+                "module",
+                "pastebin"
+            ]
+        },
+        {
+            "name": "zendframework/zend-version",
+            "version": "2.0.3",
+            "target-dir": "Zend/Version",
+            "dist": {
+                "type": "zip",
+                "url": "http://packages.zendframework.com/composer/Zend_Version-2.0.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Version\\": ""
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": " ",
+            "homepage": "http://packages.zendframework.com/",
+            "keywords": [
+                "zf2",
+                "version"
+            ],
+            "support": {
+                "email": "fw-general-subscribe@lists.zend.com",
+                "irc": "irc://irc.freenode.net/zftalk",
+                "issues": "https://github.com/zendframework/zf2/issues",
+                "source": "https://github.com/zendframework/zf2"
+            }
+        },
+        {
+            "name": "zendframework/zendframework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/zendframework/zf2.git",
+                "reference": "0e70e048a402fe73fd6ff51613d47fa8b6589c63"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/zendframework/zf2/zipball/master",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "replace": {
+                "zendframework/zend-acl": "self.version",
+                "zendframework/zend-authentication": "self.version",
+                "zendframework/zend-barcode": "self.version",
+                "zendframework/zend-cache": "self.version",
+                "zendframework/zend-captcha": "self.version",
+                "zendframework/zend-code": "self.version",
+                "zendframework/zend-config": "self.version",
+                "zendframework/zend-console": "self.version",
+                "zendframework/zend-crypt": "self.version",
+                "zendframework/zend-db": "self.version",
+                "zendframework/zend-di": "self.version",
+                "zendframework/zend-dom": "self.version",
+                "zendframework/zend-escaper": "self.version",
+                "zendframework/zend-eventmanager": "self.version",
+                "zendframework/zend-feed": "self.version",
+                "zendframework/zend-file": "self.version",
+                "zendframework/zend-filter": "self.version",
+                "zendframework/zend-form": "self.version",
+                "zendframework/zend-http": "self.version",
+                "zendframework/zend-i18n": "self.version",
+                "zendframework/zend-inputfilter": "self.version",
+                "zendframework/zend-json": "self.version",
+                "zendframework/zend-ldap": "self.version",
+                "zendframework/zend-loader": "self.version",
+                "zendframework/zend-log": "self.version",
+                "zendframework/zend-mail": "self.version",
+                "zendframework/zend-markup": "self.version",
+                "zendframework/zend-math": "self.version",
+                "zendframework/zend-memory": "self.version",
+                "zendframework/zend-mime": "self.version",
+                "zendframework/zend-modulemanager": "self.version",
+                "zendframework/zend-mvc": "self.version",
+                "zendframework/zend-navigation": "self.version",
+                "zendframework/zend-paginator": "self.version",
+                "zendframework/zend-progressbar": "self.version",
+                "zendframework/zend-serializer": "self.version",
+                "zendframework/zend-server": "self.version",
+                "zendframework/zend-servicemanager": "self.version",
+                "zendframework/zend-session": "self.version",
+                "zendframework/zend-soap": "self.version",
+                "zendframework/zend-stdlib": "self.version",
+                "zendframework/zend-tag": "self.version",
+                "zendframework/zend-text": "self.version",
+                "zendframework/zend-uri": "self.version",
+                "zendframework/zend-validator": "self.version",
+                "zendframework/zend-view": "self.version",
+                "zendframework/zend-xmlrpc": "self.version"
+            },
+            "require-dev": {
+                "doctrine/common": ">=2.1"
+            },
+            "suggest": {
+                "doctrine/common": "Doctrine\\Common >=2.1 for annotation features",
+                "ext-intl": "ext/intl for i18n features",
+                "pecl-weakref": "Implementation of weak references for Zend\\Stdlib\\CallbackHandler",
+                "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
+                "zendframework/zendservice-recaptcha": "ZendService\\ReCaptcha for rendering ReCaptchas in Zend\\Captcha and/or Zend\\Form"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\": "library/",
+                    "ZendTest\\": "tests/"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Zend Framework 2",
+            "keywords": [
+                "framework",
+                "zf2"
+            ],
+            "support": {
+                "email": "fw-general-subscribe@lists.zend.com",
+                "irc": "irc://irc.freenode.net/zftalk",
+                "issues": "https://github.com/zendframework/zf2/issues",
+                "source": "https://github.com/zendframework/zf2"
+            },
+            "time": "1350509831"
+        },
+        {
+            "name": "zendframework/zendservice-recaptcha",
+            "version": "2.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "http://packages.zendframework.com/composer/ZendService_ReCaptcha-2.0.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zend-http": ">=2.0.0",
+                "zendframework/zend-uri": ">=2.0.0",
+                "zendframework/zend-version": ">=2.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "ZendService": "library/"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "OOP wrapper for the ReCaptcha web service",
+            "homepage": "http://packages.zendframework.com/",
+            "keywords": [
+                "zf2",
+                "recaptcha"
+            ],
+            "support": {
+                "email": "fw-general-subscribe@lists.zend.com",
+                "irc": "irc://irc.freenode.net/zftalk",
+                "issues": "https://github.com/zendframework/zf2/issues",
+                "source": "https://github.com/zendframework/zf2"
+            }
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "phly/phly-mongo": 20,
+        "phly/phly-paste": 20
+    }
+}
