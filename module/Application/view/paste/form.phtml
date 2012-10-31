@@ -6,14 +6,7 @@ $messages = $form->getMessages();
 <div class="control-group">
     <label class="control-label" for="language">Language:</label>
     <div class="controls">
-    <select id="language" name="language" required="required">
-        <option value="txt" selected="selected">Plain Text</option>
-        <option value="javascript">JavaScript</option>
-        <option value="php">PHP</option>
-        <option value="markdown">Markdown</option>
-        <option value="xml">XML</option>
-        <option value="dosini">INI</option>
-    </select>
+        <?php echo $this->formElement($form->get('language')) ?>
     </div>
     <?php if (isset($messages['language']) && !empty($messages['language'])): ?>
     <span class="help-block error">
@@ -25,8 +18,7 @@ $messages = $form->getMessages();
 <div class="control-group">
     <label class="control-label" for="private">Private?</label>
     <div class="controls">
-    <input type="hidden" name="private" value="false">
-    <input id="private" type="checkbox" name="private" value="true">
+        <?php echo $this->formElement($form->get('private')) ?>
     </div>
     <?php if (isset($messages['private']) && !empty($messages['private'])): ?>
     <span class="help-block error">
@@ -38,7 +30,12 @@ $messages = $form->getMessages();
 <div class="control-group">
     <label class="control-label" for="content">Paste content:</label>
     <div class="controls">
-    <textarea id="content" name="content" required="required" cols="80" rows="25" class="input-xlarge"></textarea>
+        <?php 
+            $content = $form->get('content');
+            $content->setAttribute('class', 'input-xlarge');
+            $content->setAttribute('rows', 25);
+            echo $this->formElement($content);
+        ?>
     </div>
     <?php if (isset($messages['content']) && !empty($messages['content'])): ?>
     <span class="help-block error">
@@ -61,7 +58,7 @@ $messages = $form->getMessages();
 
 <div class="control-group">
     <div class="controls">
-    <input type="hidden" name="secure" value="2f786610bf2f144306c5f2984d8fa202">
+    <?php echo $this->formElement($form->get('secure')) ?>
     <?php if (isset($messages['secure']) && !empty($messages['secure'])): ?>
     <span class="help-block error">
         We detected a potential security problem with your submission; please try submitting again.
