@@ -1,0 +1,176 @@
+<section class="phly-paste row">
+<div class="span8">
+    <h1>Help</h1>
+
+    <ul>
+        <li><a href="#general">General</a></li>
+        <li><a href="#advanced">Advanced Pasting</a></li>
+        <li><a href="#api">API</a></li>
+    </ul>
+
+    <br />
+
+    <h2 id="general">General</h2>
+
+        <p>
+            This is a pastebin application, intended for sharing and discussing 
+            code. Paste some code in, and then share the URL provided to you.
+            This is particularly useful on IRC, where you typically do not want
+            to paste large sections of code.
+        </p>
+
+        <p>
+            Pastes are limited to 64k.
+        </p>
+
+    <h2 id="advanced">Advanced Pasting</h2>
+    
+        <h3>Sections</h3>
+
+        <p>
+            You can divide a paste into multiple sections, typically to 
+            represent different files you wish to share. To create a 
+            new section, start a line with "##", and include 1 or more
+            lines following it. Any text following the "##" will be used
+            as the section title.
+        </p>
+
+        <pre class="well">
+## first.txt
+This is the first file.
+
+## second.txt
+This is the second file.
+        </pre>
+
+    <h3>Section-specific syntax highlighting</h3>
+        
+        <p>
+            Chances are, if you're representing multiple files in your paste,
+            you may have multiple languages represented. You can indicate the
+            language to use for syntax highlighting in braces (<code>[ ]</code>)
+            following the filename/section title.
+        </p>
+
+        <pre class="well">
+## composer.json [javascript]
+{
+    "require": {
+        "phly/phly-paste": "dev-master"
+    }
+}
+## config/application.config.php [php]
+return array(
+    'modules' => array(
+        'Application',
+        'PhlyPaste',
+    ),
+    /* ... */
+);
+        </pre>
+
+    <h2 id="api">API</h2>
+
+        <p>
+            A RESTful JSON API is provided by default, and is found at the path 
+            <code>/api/paste</code>. It uses the <code>application/json</code>
+            media type, and allows listing, fetching, and submitting pastes, as 
+            detailed below.
+        </p>
+
+        <h3>GET /api/paste[?page=X]</h3>
+
+        <p>
+            Retrieves a single page of a list of pastes. The payload looks like the
+            following:
+        </p>
+
+        <pre>
+HTTP/1.0 200 Ok
+Content-Type: application/json
+
+{
+    "links": [
+        {"rel": "canonical", "href": "http://p.mwop.net/"},
+        {"rel": "self", "href": "http://p.mwop.net/api/paste"},
+        {"rel": "first", "href": "http://p.mwop.net/api/paste"},
+        {"rel": "last", "href": "http://p.mwop.net/api/paste?page=X"},
+        {"rel": "next", "href": "http://p.mwop.net/api/paste?page=2"}
+    ]
+    "items": [
+        [
+            {"rel": "canonical", "href": "http://p.mwop.net/XYZ"},
+            {"rel": "item", "href": "http://p.mwop.net/api/paste/XYZ"}
+        ],
+        /* ... */
+    ]
+}
+        </pre>
+
+        <h3>GET /api/paste/XYZ12ABC</h3>
+        
+        <p>
+            Fetches information on a single paste. The payload looks like the 
+            following:
+        </p>
+
+        <pre>
+HTTP/1.0 200 Ok
+Content-Type: application/json
+
+{
+    "links": [
+        {"rel": "canonical", "href": "http://p.mwop.net/XYZ12ABC"},
+        {"rel": "self", "href": "http://p.mwop.net/api/paste/XYZ12ABC"},
+        {"rel": "up", "href": "http://p.mwop.net/api/paste"}
+    ],
+    "title": "...",
+    "language": "...",
+    "timestamp": "...",
+}
+        </pre>
+
+        <h3>POST /api/paste</h3>
+
+        <p>
+            Creates a new paste. This requires that you have an API token; ask 
+            the administrator of this site for one if you need this functionality.
+        </p>
+
+        <p>
+            Expects a JSON body, like the following:
+        </p>
+
+        <pre>
+Accept: application/json
+Content-Type: application/json
+X-PhlyPaste-Token: yourtoken
+
+{
+    "language": "txt",
+    "private": "false",
+    "content": "This is the paste content..."
+}
+        </pre>
+
+        <p>
+            You will get the following response payload:
+        </p>
+
+        <pre>
+HTTP/1.0 201 Created
+Location: http://paste.local/XYZ12ABC
+Content-Type: application/json
+
+{
+    "links": [
+        {"rel": "canonical", "href": "http://p.mwop.net/XYZ12ABC"},
+        {"rel": "self", "href": "http://p.mwop.net/api/paste/XYZ12ABC"}
+    ]
+}
+        </pre>
+</div>
+
+<?php echo $this->render('phly-paste/paste/sidebar'); ?>
+
+</section>
