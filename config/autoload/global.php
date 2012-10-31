@@ -11,6 +11,10 @@
  * file.
  */
 
+$mongoServer = getenv('OPENSHIFT_NOSQL_DB_URL')
+             ? getenv('OPENSHIFT_NOSQL_DB_URL')
+             : 'mongodb://localhost:27017';
+
 return array(
     'phly_paste' => array(
         'captcha' => array(
@@ -18,7 +22,7 @@ return array(
     ),
     'mongo' => array(
         'connection' => array(
-            'server' => 'mongodb://localhost:27017',
+            'server' => $mongoServer,
             'options' => array(
                 'connect'  => true,
             ),

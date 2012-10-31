@@ -3,6 +3,5 @@
 # available.  Otherwise it will execute while your application is stopped
 # before the deploy step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
-export
-# echo "Installing composer dependencies..."
-# /usr/bin/env php composer.phar install
+echo "Installing composer dependencies..."
+(cd $OPENSHIFT_GEAR_DIR ; /usr/bin/env php composer.phar install)
