@@ -1,0 +1,74 @@
+<?php
+$form     = $this->form;
+$messages = $form->getMessages();
+?>
+<form action="<?php echo $this->url('phly-paste/process') ?>" method="post" name="Paste" class="well form-horizontal" id="Paste">
+<div class="control-group">
+    <label class="control-label" for="language">Language:</label>
+    <div class="controls">
+    <select id="language" name="language" required="required">
+        <option value="txt" selected="selected">Plain Text</option>
+        <option value="javascript">JavaScript</option>
+        <option value="php">PHP</option>
+        <option value="markdown">Markdown</option>
+        <option value="xml">XML</option>
+        <option value="dosini">INI</option>
+    </select>
+    </div>
+    <?php if (isset($messages['language']) && !empty($messages['language'])): ?>
+    <span class="help-block error">
+        <?php echo implode("<br />\n", $messages['language']) ?>
+    </span>
+    <?php endif ?>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="private">Private?</label>
+    <div class="controls">
+    <input type="hidden" name="private" value="false">
+    <input id="private" type="checkbox" name="private" value="true">
+    </div>
+    <?php if (isset($messages['private']) && !empty($messages['private'])): ?>
+    <span class="help-block error">
+        <?php echo implode("<br />\n", $messages['private']) ?>
+    </span>
+    <?php endif ?>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="content">Paste content:</label>
+    <div class="controls">
+    <textarea id="content" name="content" required="required" cols="80" rows="25" class="input-xlarge"></textarea>
+    </div>
+    <?php if (isset($messages['content']) && !empty($messages['content'])): ?>
+    <span class="help-block error">
+        <?php echo implode("<br />\n", $messages['content']) ?>
+    </span>
+    <?php endif ?>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="captcha">Please verify you are human:</label>
+    <div class="controls">
+        <?php echo $this->formElement($form->get('captcha')) ?>
+    </div>
+    <?php if (isset($messages['captcha']) && !empty($messages['captcha'])): ?>
+    <span class="help-block error">
+        <?php echo implode("<br />\n", $messages['captcha']) ?>
+    </span>
+    <?php endif ?>
+</div>
+
+<div class="control-group">
+    <div class="controls">
+    <input type="hidden" name="secure" value="2f786610bf2f144306c5f2984d8fa202">
+    <?php if (isset($messages['secure']) && !empty($messages['secure'])): ?>
+    <span class="help-block error">
+        We detected a potential security problem with your submission; please try submitting again.
+    </span>
+    <?php endif ?>
+
+    <button type="submit" name="paste" class="btn btn-primary" value="">Paste</button>
+    </div>
+</div>
+</form>
