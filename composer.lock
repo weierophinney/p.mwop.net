@@ -87,7 +87,6 @@
             "require": {
                 "php": ">4.3.0"
             },
-            "time": "1348828425",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -114,7 +113,8 @@
                 "syntax",
                 "highlight",
                 "highlighter"
-            ]
+            ],
+            "time": "1348828425"
         },
         {
             "name": "nick4fake/htmlpurifier",
@@ -133,7 +133,6 @@
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "1348047456",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -146,7 +145,8 @@
                 "LGPL-2.0"
             ],
             "description": "HTML Purifier is a standards-compliant HTML filter library written in PHP.",
-            "homepage": "http://htmlpurifier.org/"
+            "homepage": "http://htmlpurifier.org/",
+            "time": "1348047456"
         },
         {
             "name": "phly/phly-mongo",
@@ -154,12 +154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weierophinney/PhlyMongo",
-                "reference": "f87f21493441c1fa29a475539a260591e1cfc430"
+                "reference": "d4d088ed362cedf8d9f25ee0274532fc86362383"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/weierophinney/PhlyMongo/zipball/f87f21493441c1fa29a475539a260591e1cfc430",
-                "reference": "f87f21493441c1fa29a475539a260591e1cfc430",
+                "url": "https://github.com/weierophinney/PhlyMongo/zipball/d4d088ed362cedf8d9f25ee0274532fc86362383",
+                "reference": "d4d088ed362cedf8d9f25ee0274532fc86362383",
                 "shasum": ""
             },
             "require": {
@@ -174,7 +174,7 @@
                 "zendframework/zend-modulemanager": "2.*",
                 "zendframework/zend-mvc": "2.*"
             },
-            "time": "1350338185",
+            "time": "1350677486",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -209,12 +209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weierophinney/PhlyPaste",
-                "reference": "2ef6be6a34d51b3c2290f086b2da2cf5922d8b32"
+                "reference": "242078701a2a1aa49c749945873cb84d5c4024a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/weierophinney/PhlyPaste/zipball/2ef6be6a34d51b3c2290f086b2da2cf5922d8b32",
-                "reference": "2ef6be6a34d51b3c2290f086b2da2cf5922d8b32",
+                "url": "https://github.com/weierophinney/PhlyPaste/zipball/242078701a2a1aa49c749945873cb84d5c4024a4",
+                "reference": "242078701a2a1aa49c749945873cb84d5c4024a4",
                 "shasum": ""
             },
             "require": {
@@ -235,7 +235,7 @@
                 "zendframework/zend-db": "Install Zend\\Db if you plan to use the TableGatewayPasteService",
                 "zendframework/zendservice-recaptcha": "Install ReCaptcha service if you plan to use ReCaptcha"
             },
-            "time": "1350499459",
+            "time": "1351712713",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -374,6 +374,7 @@
                 "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
                 "zendframework/zendservice-recaptcha": "ZendService\\ReCaptcha for rendering ReCaptchas in Zend\\Captcha and/or Zend\\Form"
             },
+            "time": "1350509831",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -400,8 +401,7 @@
                 "irc": "irc://irc.freenode.net/zftalk",
                 "issues": "https://github.com/zendframework/zf2/issues",
                 "source": "https://github.com/zendframework/zf2"
-            },
-            "time": "1350509831"
+            }
         },
         {
             "name": "zendframework/zendservice-recaptcha",
