@@ -1,0 +1,22 @@
+<article class="row">
+<div class="span8">
+    <div class="well"><?php
+        echo $this->highlight($this->paste->content, $this->paste->language);
+    ?></div>
+    
+    <dl>
+        <dt>Pasted</dt>
+        <dd><?php echo $this->timeAgo($this->paste->timestamp) ?></dd>
+
+        <dt>Act</dt>
+        <dd><a href="<?php echo $this->url('phly-paste/view/raw', array('paste' => $paste->hash)) ?>">Raw</a></dd>
+        <dd><a href="<?php echo $this->url('phly-paste/view/repaste', array('paste' => $paste->hash)) ?>">Repaste</a></dd>
+    </dl>
+
+    <?php echo $this->disqus($this->paste->hash, $this->url('phly-paste/view', array('paste' => $paste->hash)), false, false) ?>
+</div>
+
+<?php echo $this->render('phly-paste/paste/sidebar') ?>
+
+</article>
+

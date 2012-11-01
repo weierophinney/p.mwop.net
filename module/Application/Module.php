@@ -22,6 +22,15 @@ class Module
         return include __DIR__ . '/config/module.config.php';
     }
 
+    public function getAutoloaderConfig()
+    {
+        return array('Zend\Loader\StandardAutoloader' => array(
+            'namespaces' => array(
+                __NAMESPACE__ => __DIR__ . '/src/Application',
+            ),
+        ));
+    }
+
     public function getServiceConfig()
     {
         return array('factories' => array(
@@ -49,6 +58,18 @@ class Module
             'PhlyPaste\MongoService' => function ($services) {
                 $collection = $services->get('Paste\MongoCollection');
                 return new MongoPasteService($collection);
+            },
+        ));
+    }
+
+    public function getViewHelperConfig()
+    {
+        return array('factories' => array(
+            'disqus' => function ($helpers) {
+                $services = $helpers->getServiceLocator();
+                $config   = $services->get('config');
+                $config   = $config['disqus'];
+                return new View\Disqus($config);
             },
         ));
     }
