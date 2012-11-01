@@ -209,12 +209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weierophinney/PhlyPaste",
-                "reference": "242078701a2a1aa49c749945873cb84d5c4024a4"
+                "reference": "ddec762a3c0e296f21e8d0599d3efbfa69d3f4cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/weierophinney/PhlyPaste/zipball/242078701a2a1aa49c749945873cb84d5c4024a4",
-                "reference": "242078701a2a1aa49c749945873cb84d5c4024a4",
+                "url": "https://github.com/weierophinney/PhlyPaste/zipball/ddec762a3c0e296f21e8d0599d3efbfa69d3f4cf",
+                "reference": "ddec762a3c0e296f21e8d0599d3efbfa69d3f4cf",
                 "shasum": ""
             },
             "require": {
@@ -235,7 +235,7 @@
                 "zendframework/zend-db": "Install Zend\\Db if you plan to use the TableGatewayPasteService",
                 "zendframework/zendservice-recaptcha": "Install ReCaptcha service if you plan to use ReCaptcha"
             },
-            "time": "1351712713",
+            "time": "1351785460",
             "type": "library",
             "installation-source": "source",
             "autoload": {

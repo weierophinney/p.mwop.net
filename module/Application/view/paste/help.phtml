@@ -169,6 +169,37 @@ Content-Type: application/json
     ]
 }
         </pre>
+
+        <h3>GET /paste/api/languages</h3>
+
+        <p>
+            Returns a list of language strings that may be used when creating a paste.
+        </p>
+
+        <pre>
+HTTP/1.0 200 Ok
+Content-Type: application/json
+
+{
+    "languages": [
+        "apache",
+        "diff",
+        "html4strict",
+        "ini",
+        "javascript",
+        "jquery",
+        "markdown",
+        "php",
+        "text",
+        "python",
+        "ruby",
+        "bash",
+        "sql",
+        "vim",
+        "xml"
+    ]
+}
+        </pre>
 </div>
 
 <?php echo $this->render('phly-paste/paste/sidebar'); ?>
