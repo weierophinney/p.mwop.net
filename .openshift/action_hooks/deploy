@@ -3,4 +3,4 @@
 # build hook has been run but before the application has been started back
 # up again.  This script gets executed directly, so it could be python, php,
 # ruby, etc.
-( unset GIT_DIR ; cd $OPENSHIFT_REPO_DIR ; php composer.phar install )
+( unset GIT_DIR ; cd $OPENSHIFT_REPO_DIR ; /usr/local/zend/bin/php composer.phar install )
