@@ -13,7 +13,6 @@ return array(
         'PhlyMongo',
         'PhlyPaste',
         'ScnSocialAuth',
-        'EdpGithub',
         'ZfcBase',
         'ZfcUser',
     ),
