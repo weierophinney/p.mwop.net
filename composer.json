@@ -19,6 +19,7 @@
         "zendframework/zendframework": "2.0.*",
         "zendframework/zendservice-recaptcha": "2.0.*",
         "phly/phly-mongo": "dev-master",
-        "phly/phly-paste": "dev-master"
+        "phly/phly-paste": "dev-master",
+        "socalnick/scn-social-auth": "dev-master"
     }
 }
