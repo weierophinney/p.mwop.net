@@ -1,0 +1,3 @@
+[submodule "vendor/EdpGithub"]
+	path = vendor/EdpGithub
+	url = git://github.com/EvanDotPro/EdpGithub.git

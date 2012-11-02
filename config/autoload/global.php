@@ -14,8 +14,15 @@
 $mongoServer = getenv('OPENSHIFT_NOSQL_DB_URL')
              ? getenv('OPENSHIFT_NOSQL_DB_URL')
              : 'mongodb://localhost:27017';
+$sqliteDbDir = getenv('OPENSHIFT_DATA_DIR')
+             ? getenv('OPENSHIFT_DATA_DIR')
+             : realpath(getcwd() . '/data');
 
 return array(
+    'db' => array(
+        'driver'  => 'Pdo',
+        'dsn'     => 'sqlite://' . $sqliteDbDir . '/users.db',
+    ),
     'phly_paste' => array(
         'captcha' => array(
         ),
@@ -39,6 +46,9 @@ return array(
     'service_manager' => array(
         'aliases' => array(
             'PhlyPaste\PasteService' => 'PhlyPaste\MongoService',
+        ),
+        'factories' => array(
+            'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
         ),
     ),
     'router' => array('routes' => array(
