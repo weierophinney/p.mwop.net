@@ -49,6 +49,7 @@ return array(
         ),
         'factories' => array(
             'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
+            'ScnSocialAuth-UserProviderMapper' => 'PhlySocialAuth\UserProviderServiceFactory',
         ),
     ),
     'router' => array('routes' => array(
