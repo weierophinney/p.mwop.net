@@ -20,7 +20,7 @@ return array(
             'error/index'             => __DIR__ . '/../view/error/index.phtml',
             'phly-paste/paste/help'   => __DIR__ . '/../view/paste/help.phtml',
             'phly-paste/paste/list'   => __DIR__ . '/../view/paste/list.phtml',
-            'phly-paste/paste/sidebar'=> __DIR__ . '/../sidebar/paste/sidebar.phtml',
+            'phly-paste/paste/sidebar'=> __DIR__ . '/../view/paste/sidebar.phtml',
             'phly-paste/paste/view'   => __DIR__ . '/../view/paste/view.phtml',
         ),
         'template_path_stack' => array(
