@@ -15,6 +15,7 @@ return array(
         'ScnSocialAuth',
         'ZfcBase',
         'ZfcUser',
+        'PhlySocialAuth',
     ),
     'module_listener_options' => array(
         'config_glob_paths' => $configGlobPaths,
