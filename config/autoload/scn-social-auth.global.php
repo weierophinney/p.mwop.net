@@ -30,7 +30,7 @@ $settings = array(
      * You can register a new application at:
      * https://github.com/settings/applications/new
      */
-    'github_enabled' => false,
+    'github_enabled' => true,
 
     /**
      * Github Scope
