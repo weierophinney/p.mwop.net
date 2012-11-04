@@ -18,7 +18,6 @@ return array(
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',
-            'phly-paste/paste/form'   => __DIR__ . '/../view/paste/form.phtml',
             'phly-paste/paste/help'   => __DIR__ . '/../view/paste/help.phtml',
             'phly-paste/paste/list'   => __DIR__ . '/../view/paste/list.phtml',
             'phly-paste/paste/view'   => __DIR__ . '/../view/paste/view.phtml',
