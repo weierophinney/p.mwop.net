@@ -32,11 +32,7 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="active"><a href="<?php echo $this->url('phly-paste') ?>">paste</a></li>
-                        <?php if (false === $this->zfcUserIdentity()): ?>
-                            <li class="active"><a href="<?php echo $this->url('zfcuser') ?>">login</a></li>
-                        <?php else: ?>
-                            <li class="active"><a href="<?php echo $this->url('zfcuser/logout') ?>">logout</a></li>
-                        <?php endif ?>
+                            <li><a href="<?php echo $this->url('zfcuser') ?>">login/lgout</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>

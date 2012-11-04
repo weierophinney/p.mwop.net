@@ -1,9 +1,7 @@
 <aside class="span3 well">
     <ul>
         <li><a href="<?php echo $this->url('phly-paste') ?>">Create new paste</a></li>
-    <?php if (false === $this->zfcUserIdentity()): ?>
-        <li><a href="<?php echo $this->url('zfcuser')?>">Login</a> (to remove CAPTCHAs)</li>
-    <?php endif ?>
+        <li><a href="<?php echo $this->url('zfcuser') ?>">Login</a> (to remove CAPTCHAs)</li>
         <li><a href="<?php echo $this->url('phly-paste/list') ?>">List pastes</a></li>
         <li><a href="<?php echo $this->url('phly-paste/help') ?>">Help</a></li>
     </ul>
