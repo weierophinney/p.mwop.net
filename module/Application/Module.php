@@ -24,11 +24,16 @@ class Module
 
     public function getAutoloaderConfig()
     {
-        return array('Zend\Loader\StandardAutoloader' => array(
-            'namespaces' => array(
-                __NAMESPACE__ => __DIR__ . '/src/Application',
+        return array(
+            'Zend\Loader\ClassMapAutoloader' => array(
+                'Hybrid_Providers_GitHub' => getcwd() . '/vendor/hybridauth/hybridauth/additional-providers/hybridauth-github/Providers/GitHub.php',
             ),
-        ));
+            'Zend\Loader\StandardAutoloader' => array(
+                'namespaces' => array(
+                    __NAMESPACE__ => __DIR__ . '/src/Application',
+                ),
+            ),
+        );
     }
 
     public function getServiceConfig()
