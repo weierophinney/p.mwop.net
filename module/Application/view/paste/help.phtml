@@ -23,6 +23,11 @@
             Pastes are limited to 64k.
         </p>
 
+        <p>
+            If you <a href="<?php echo $this->url('zfcuser') ?>">login</a>, you 
+            can avoid the necessity of filling in a CAPTCHA for each paste.
+        </p>
+
     <h2 id="advanced">Advanced Pasting</h2>
     
         <h3>Sections</h3>
@@ -170,7 +175,7 @@ Content-Type: application/json
 }
         </pre>
 
-        <h3>GET /paste/api/languages</h3>
+        <h3>GET /api/paste/languages</h3>
 
         <p>
             Returns a list of language strings that may be used when creating a paste.
