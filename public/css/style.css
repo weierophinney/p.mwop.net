@@ -29,3 +29,7 @@ body {
 .btn-success:active, .btn-success.active {
   background-color: #57a900;
 }
+
+div.paste-view, figure pre {
+    overflow: auto;
+}
