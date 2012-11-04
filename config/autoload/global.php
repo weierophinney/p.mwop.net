@@ -46,6 +46,7 @@ return array(
     'service_manager' => array(
         'aliases' => array(
             'PhlyPaste\PasteService' => 'PhlyPaste\MongoService',
+            'PhlyPaste\AuthService'  => 'zfcuser_auth_service',
         ),
         'factories' => array(
             'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
