@@ -7,18 +7,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common",
-                "reference": "20cb487a5809a42f03020c89fa09eb4458de827f"
+                "reference": "30b8cea3bfe22f5eb58b5b0165f21df750aeb2e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/common/zipball/20cb487a5809a42f03020c89fa09eb4458de827f",
-                "reference": "20cb487a5809a42f03020c89fa09eb4458de827f",
+                "url": "https://github.com/doctrine/common/archive/30b8cea3bfe22f5eb58b5b0165f21df750aeb2e2.zip",
+                "reference": "30b8cea3bfe22f5eb58b5b0165f21df750aeb2e2",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "1350491397",
+            "time": "1352815365",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -122,18 +122,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hybridauth/hybridauth",
-                "reference": "9bb39f843556d4c88d1cc5b2c9533d3fcb465361"
+                "reference": "4aa2e49006b617aa9feb10c834c5d0d47ae19b9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/hybridauth/hybridauth/zipball/9bb39f843556d4c88d1cc5b2c9533d3fcb465361",
-                "reference": "9bb39f843556d4c88d1cc5b2c9533d3fcb465361",
+                "url": "https://github.com/hybridauth/hybridauth/archive/4aa2e49006b617aa9feb10c834c5d0d47ae19b9d.zip",
+                "reference": "4aa2e49006b617aa9feb10c834c5d0d47ae19b9d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2.0"
+                "php": ">=5.2.0",
+                "ext-curl": "*"
             },
-            "time": "1348090747",
+            "time": "1352832260",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -316,12 +317,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SocalNick/ScnSocialAuth",
-                "reference": "d3269b789f97571da273e7c88fce4f926cf1b8f7"
+                "reference": "1.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/SocalNick/ScnSocialAuth/zipball/d3269b789f97571da273e7c88fce4f926cf1b8f7",
-                "reference": "d3269b789f97571da273e7c88fce4f926cf1b8f7",
+                "url": "https://github.com/SocalNick/ScnSocialAuth/archive/1.1.2.zip",
+                "reference": "1.1.2",
                 "shasum": ""
             },
             "require": {
@@ -331,7 +332,7 @@
                 "zendframework/zendframework": "2.*",
                 "hybridauth/hybridauth": "dev-master"
             },
-            "time": "1351026470",
+            "time": "1352496715",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -593,12 +594,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/ZF-Commons/ZfcUser.git",
-                "reference": "a2065932cf09774544d5ad02ae57474ce2e4a914"
+                "reference": "5787eb8bcbc974308d8c31eb1da7a6b5044e7715"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/ZF-Commons/ZfcUser/zipball/a2065932cf09774544d5ad02ae57474ce2e4a914",
-                "reference": "a2065932cf09774544d5ad02ae57474ce2e4a914",
+                "url": "https://github.com/ZF-Commons/ZfcUser/archive/5787eb8bcbc974308d8c31eb1da7a6b5044e7715.zip",
+                "reference": "5787eb8bcbc974308d8c31eb1da7a6b5044e7715",
                 "shasum": ""
             },
             "require": {
@@ -606,7 +607,7 @@
                 "zf-commons/zfc-base": "dev-master",
                 "zendframework/zendframework": "2.*"
             },
-            "time": "1351458751",
+            "time": "1352735726",
             "type": "library",
             "installation-source": "source",
             "autoload": {

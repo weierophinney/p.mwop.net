@@ -20,8 +20,8 @@ $sqliteDbDir = getenv('OPENSHIFT_DATA_DIR')
 
 return array(
     'db' => array(
-        'driver'  => 'Pdo',
-        'dsn'     => 'sqlite://' . $sqliteDbDir . '/users.db',
+        'driver'   => 'Pdo_Sqlite',
+        'database' => $sqliteDbDir . '/users.db',
     ),
     'phly_paste' => array(
         'captcha' => array(
@@ -50,7 +50,6 @@ return array(
         ),
         'factories' => array(
             'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
-            'ScnSocialAuth-UserProviderMapper' => 'PhlySocialAuth\UserProviderServiceFactory',
         ),
     ),
     'router' => array('routes' => array(
