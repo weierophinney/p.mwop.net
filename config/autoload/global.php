@@ -48,6 +48,9 @@ return array(
             'PhlyPaste\PasteService' => 'PhlyPaste\MongoService',
             'PhlyPaste\AuthService'  => 'zfcuser_auth_service',
         ),
+        'invokables' => array(
+            'Zend\Session\SessionManager' => 'Zend\Session\SessionManager',
+        ),
         'factories' => array(
             'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
         ),
