@@ -142,6 +142,8 @@ Content-Type: application/json
             the administrator of this site for one if you need this functionality.
         </p>
 
+        <h4>Body as JSON</h4>
+
         <p>
             Expects a JSON body, like the following:
         </p>
@@ -174,6 +176,26 @@ Content-Type: application/json
     ]
 }
         </pre>
+
+        <h4>Body as content</h4>
+
+        <p>
+            Alternately, you can provide the paste as the request content, and 
+            specify the language and private status via the query string.
+        </p>
+
+        <pre>
+POST /api/paste?language=text&private=false
+Accept: application/json
+Content-Type: text/plain
+X-PhlyPaste-Token: yourtoken
+
+This is the paste content...
+        </pre>
+
+        <p>
+            The response payload is exactly the same as the previous example.
+        </p>
 
         <h3>GET /api/paste/languages</h3>
 
