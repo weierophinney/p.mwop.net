@@ -78,7 +78,7 @@ return array(
 
         <p>
             A RESTful JSON API is provided by default, and is found at the path 
-            <code>/api/paste</code>. It uses the <code>application/json</code>
+            <code>/api/paste</code>. It uses the <code>application/hal+json</code>
             media type, and allows listing, fetching, and submitting pastes, as 
             detailed below.
         </p>
@@ -92,16 +92,16 @@ return array(
 
         <pre>
 HTTP/1.0 200 Ok
-Content-Type: application/json
+Content-Type: application/hal+json
 
 {
-    "links": [
-        {"rel": "canonical", "href": "http://p.mwop.net/"},
-        {"rel": "self", "href": "http://p.mwop.net/api/paste"},
-        {"rel": "first", "href": "http://p.mwop.net/api/paste"},
-        {"rel": "last", "href": "http://p.mwop.net/api/paste?page=X"},
-        {"rel": "next", "href": "http://p.mwop.net/api/paste?page=2"}
-    ]
+    "_links": {
+        "canonical": {"rel": "canonical", "href": "http://p.mwop.net/"},
+        "self": {"rel": "self", "href": "http://p.mwop.net/api/paste"},
+        "first": {"rel": "first", "href": "http://p.mwop.net/api/paste"},
+        "last": {"rel": "last", "href": "http://p.mwop.net/api/paste?page=X"},
+        "next": {"rel": "next", "href": "http://p.mwop.net/api/paste?page=2"}
+    },
     "items": [
         [
             {"rel": "canonical", "href": "http://p.mwop.net/XYZ"},
@@ -121,14 +121,14 @@ Content-Type: application/json
 
         <pre>
 HTTP/1.0 200 Ok
-Content-Type: application/json
+Content-Type: application/hal+json
 
 {
-    "links": [
-        {"rel": "canonical", "href": "http://p.mwop.net/XYZ12ABC"},
-        {"rel": "self", "href": "http://p.mwop.net/api/paste/XYZ12ABC"},
-        {"rel": "up", "href": "http://p.mwop.net/api/paste"}
-    ],
+    "_links": {
+        "canonical": {"rel": "canonical", "href": "http://p.mwop.net/XYZ12ABC"},
+        "self": {"rel": "self", "href": "http://p.mwop.net/api/paste/XYZ12ABC"},
+        "up": {"rel": "up", "href": "http://p.mwop.net/api/paste"}
+    },
     "title": "...",
     "language": "...",
     "timestamp": "...",
@@ -149,8 +149,8 @@ Content-Type: application/json
         </p>
 
         <pre>
-Accept: application/json
-Content-Type: application/json
+Accept: application/hal+json
+Content-Type: application/hal+json
 X-PhlyPaste-Token: yourtoken
 
 {
@@ -167,13 +167,13 @@ X-PhlyPaste-Token: yourtoken
         <pre>
 HTTP/1.0 201 Created
 Location: http://paste.local/XYZ12ABC
-Content-Type: application/json
+Content-Type: application/hal+json
 
 {
-    "links": [
-        {"rel": "canonical", "href": "http://p.mwop.net/XYZ12ABC"},
-        {"rel": "self", "href": "http://p.mwop.net/api/paste/XYZ12ABC"}
-    ]
+    "_links": {
+        "canonical": {"rel": "canonical", "href": "http://p.mwop.net/XYZ12ABC"},
+        "self": {"rel": "self", "href": "http://p.mwop.net/api/paste/XYZ12ABC"}
+    }
 }
         </pre>
 
@@ -186,7 +186,7 @@ Content-Type: application/json
 
         <pre>
 POST /api/paste?language=text&private=false
-Accept: application/json
+Accept: application/hal+json
 Content-Type: text/plain
 X-PhlyPaste-Token: yourtoken
 
@@ -205,7 +205,7 @@ This is the paste content...
 
         <pre>
 HTTP/1.0 200 Ok
-Content-Type: application/json
+Content-Type: application/hal+json
 
 {
     "languages": [
