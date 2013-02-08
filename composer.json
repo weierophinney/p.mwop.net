@@ -16,8 +16,8 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "2.0.*",
-        "zendframework/zendservice-recaptcha": "2.0.*",
+        "zendframework/zendframework": "2.*",
+        "zendframework/zendservice-recaptcha": "2.*",
         "phly/phly-mongo": "dev-master",
         "phly/phly-paste": "1.*",
         "socalnick/scn-social-auth": "dev-master"
